@@ -1,0 +1,31 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.15",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@fastify/static": "^6.6.0",
+    "@mikro-orm/core": "^5.6.0",
+    "@mikro-orm/mongodb": "^5.6.0",
+    "@mikro-orm/nestjs": "^5.1.2",
+    "@mikro-orm/reflection": "^5.6.0",
+    "@nestjs/cli": "^9.1.5",
+    "@nestjs/common": "^9.2.1",
+    "@nestjs/config": "^2.2.0",
+    "@nestjs/core": "^9.2.1",
+    "@nestjs/platform-fastify": "^9.2.1",
+    "@nestjs/swagger": "^6.1.4",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.6.0"
+  },
+  "scripts": {
+    "build": "yarn tsc -p tsconfig.build.json",
+    "start": "yarn build && yarn node dist/main.js"
+  },
+  "type": "module"
+}
