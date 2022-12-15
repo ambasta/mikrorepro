@@ -1,12 +1,12 @@
 import { MikroOrmModule } from "@mikro-orm/nestjs";
 import { Module } from "@nestjs/common";
 
-import { RealmSchema } from "./realm.entity.js";
+import { RealmModel } from "./realm.model.js";
 
 @Module({
   imports: [
     MikroOrmModule.forFeature(
-      [RealmSchema]
+      [RealmModel]
     )
   ],
 })
